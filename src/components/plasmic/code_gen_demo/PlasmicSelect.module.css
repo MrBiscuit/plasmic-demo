@@ -1,0 +1,60 @@
+.root {
+  display: flex;
+  width: 318px;
+  height: 53px;
+  max-width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 8px;
+  border-width: 1px;
+  border-style: solid;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.dropdown {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  left: 0px;
+  top: 56px;
+  z-index: 1;
+  right: 0px;
+  flex-direction: column;
+  display: none;
+  padding: 0px;
+  border-width: 1px;
+  border-style: solid;
+}
+.dropdownisOpen {
+  display: flex;
+}
+.dropdownItem:global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  left: auto;
+  top: auto;
+  transition-property: all;
+  transition-duration: 0.25s;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.25s;
+}
+.svgisOpen {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
+}
